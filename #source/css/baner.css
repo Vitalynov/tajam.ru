@@ -1,0 +1,76 @@
+.baner {
+				height: 670px;
+}
+.baner:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				/* FF3.6-15 */
+				/* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, rgba(10, 7, 53, 0.9) 0%, rgba(80, 63, 118, 0.9) 100%);
+				/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e60a0735", endColorstr="#e6503f76",GradientType=1 );
+				/* IE6-9 */
+}
+.baner-content {
+				position: absolute;
+				z-index: 10;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+}
+.baner-content__subtitele {
+				width: 730px;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 300;
+				letter-spacing: 0.05em;
+				color: #fff;
+				text-align: center;
+				margin: 0 0 40px 0;
+}
+.baner-content__subtitele::before {
+				content: "";
+				display: block;
+				width: 50px;
+				height: 1px;
+				background-color: #00e0d0;
+				margin: 20px auto 20px;
+}
+.baner-content__btn {
+				display: block;
+				margin: 0 auto;
+				padding: 15px;
+				background-color: transparent;
+				font-family: "Hammersmith One", sans-serif;
+				font-size: 16px;
+				line-height: 1.2;
+				font-weight: 400;
+				color: #00e0d0;
+				border: 1px solid #00e0d0;
+}
+.baner-dots {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				position: absolute;
+				bottom: 70px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 60px;
+				height: 15px;
+				z-index: 10;
+}
+.baner-dots > span {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				border: 1px solid #fff;
+}
+
+.activ-dot {
+				background-color: #00e0d0;
+}

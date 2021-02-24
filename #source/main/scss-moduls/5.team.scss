@@ -1,0 +1,103 @@
+/*- Блок КОМАНДА -*/
+.team{
+    position: relative;
+    width: 100%;
+    padding: 70px 0 70px 0;
+    &-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: -moz-linear-gradient(left,  rgba(10,7,53,0.9) 0%, rgba(80,63,118,0.9) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  rgba(10,7,53,0.9) 0%,rgba(80,63,118,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  rgba(10,7,53,0.9) 0%,rgba(80,63,118,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e60a0735', endColorstr='#e6503f76',GradientType=1 ); /* IE6-9 */
+
+        }
+        
+    }
+    &-content{
+        position: relative;
+        z-index: 10;
+    }
+    &-titel{
+        color: #fff;
+        text-align: center;
+        margin: 0 0 15px 0;
+    }
+    &-subtitel{
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0.075em;
+        color: #f9f9f9;
+        text-align: center;
+        &::after{
+            content: "";
+            display: block;
+            margin: 15px auto 45px;
+            width: 50px;
+            height: 2px;
+            opacity: 0.2;
+            background-color: #fff;
+            
+        }
+        &__bottom{
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: 300;
+                letter-spacing: 0.05em;
+                color: #f3f3f3;
+                text-align: center;
+                margin: 0 0 28px 0;
+            }
+    }
+    &-items{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 70px 0;        
+    }
+    &-item{
+        flex: 0 1 225px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 230px;
+        height: 300px;
+        border: 1px solid #fff;
+        &__img{
+            width: 225px;
+            height: 220px;
+            background-color: #fff;
+            margin: 0 0 20px 0;
+        }
+        &__name{
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            color: #fff;
+            padding: 0 0 6px 0;
+        }
+        &__skil{
+            opacity: 0.7;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #fafafa;
+        }
+    }
+    &-btn{
+        display: block;
+        margin: 0 auto;
+    }
+}

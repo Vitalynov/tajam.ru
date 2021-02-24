@@ -1,0 +1,15 @@
+/*Main block*/
+
+//пример внесения миксина адаптивного шрифта и контейнера
+// .box p {
+//     @include adaptiv-font(16, 10);
+//     @include container (1170px)
+// }
+@import "scss-moduls/1.baner.scss";
+@import "scss-moduls/2.story.scss";
+@import "scss-moduls/3.movie.scss";
+@import "scss-moduls/4.services.scss";
+@import "scss-moduls/5.team.scss";
+@import "scss-moduls/6.works.scss";
+@import "scss-moduls/7.clients.scss";
+@import "scss-moduls/8.news.scss";

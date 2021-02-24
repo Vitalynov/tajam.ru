@@ -1,0 +1,56 @@
+/*- Секция movie -*/
+.movie{
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    &-img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: -moz-linear-gradient(left,  rgba(10,7,53,0.9) 0%, rgba(80,63,118,0.9) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  rgba(10,7,53,0.9) 0%,rgba(80,63,118,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  rgba(10,7,53,0.9) 0%,rgba(80,63,118,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e60a0735', endColorstr='#e6503f76',GradientType=1 ); /* IE6-9 */
+
+        }
+    }
+    &-content {
+        width: 170px;
+        position: absolute;
+        top: 50%;;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &__icon{
+            display: block;
+            margin: 0 auto 30px;
+            position: relative;
+            width: 100px; 
+            height: 100px;
+           
+            &>img{
+                width: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50px, -50px);
+            } 
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            color: #fff;
+           
+        }
+    }
+}
+
+

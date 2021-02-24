@@ -1,0 +1,110 @@
+/*- Блок КЛИЕНТЫ -*/
+.clients{
+    width: 100%;
+    padding: 70px 0 70px 0;
+    position: relative;
+    &-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: -moz-linear-gradient(left,  rgba(10,7,53,0.9) 0%, rgba(80,63,118,0.9) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  rgba(10,7,53,0.9) 0%,rgba(80,63,118,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  rgba(10,7,53,0.9) 0%,rgba(80,63,118,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e60a0735', endColorstr='#e6503f76',GradientType=1 ); /* IE6-9 */
+        }
+    }
+    &-content{
+        position: relative;
+        z-index: 10;
+    }
+    &-icon{
+        display: block;
+        width: 32px;
+        height: 30px;
+        margin: 0 auto 40px;
+        
+        &>.fa{
+            opacity: 0.9;
+            font-size: 30px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+    }
+    &-text{
+        font-family: 'Playfair Display', serif;
+        opacity: 0.85;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #fff;
+        text-align: center;
+        padding: 0 70px;
+        margin:0 0 50px 0;
+    }
+    &-name{
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        color: #fff;
+        text-align: center;
+        margin: 0 0 6px 0;
+    }
+    &-skil{
+        opacity: 0.7;
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 300;
+        color: #fff;
+        text-align: center;
+        margin: 0 0 42px 0;
+    }
+    &-box{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        width: 390px;
+        height: 70px;
+        margin: 0 auto;
+        &>a{
+            text-decoration: none;
+            &>.fa{
+             color: #fff;
+             font-size: 32px;
+            }
+        }
+        
+    }
+    &-slider{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        width: 305px;
+        height: 70px;
+        &__item{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            &>img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.slider-big{
+    width: 70px;
+    height: 70px;
+}
